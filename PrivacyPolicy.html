@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal - EmojiPicker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #f72585;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #4cc9f0;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f2f5;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .logo i {
+            font-size: 28px;
+            color: white;
+        }
+        
+        .logo h1 {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            font-size: 17px;
+        }
+        
+        nav a:hover {
+            color: white;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Legal Pages Hero */
+        .legal-hero {
+            background: linear-gradient(rgba(67, 97, 238, 0.9), rgba(63, 55, 201, 0.9));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .legal-hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .legal-hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Legal Content */
+        .legal-content {
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 40px;
+            margin: 50px auto;
+        }
+        
+        .legal-content h3 {
+            color: var(--primary);
+            margin: 30px 0 15px;
+            font-size: 1.5rem;
+        }
+        
+        .legal-content h4 {
+            margin: 25px 0 10px;
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
+        
+        .legal-content p {
+            margin-bottom: 15px;
+            color: var(--gray);
+        }
+        
+        .legal-content ul {
+            margin: 15px 0 25px 30px;
+        }
+        
+        .legal-content li {
+            margin-bottom: 8px;
+            color: var(--gray);
+        }
+        
+        .legal-tabs {
+            display: flex;
+            border-bottom: 2px solid #e9ecef;
+            margin-bottom: 30px;
+        }
+        
+        .legal-tab {
+            padding: 12px 25px;
+            cursor: pointer;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            transition: var(--transition);
+        }
+        
+        .legal-tab.active {
+            border-bottom-color: var(--accent);
+            color: var(--accent);
+        }
+        
+        .legal-tab:hover:not(.active) {
+            border-bottom-color: var(--primary);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h4:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+        }
+
+        /* Form Styles */
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-control {
+            padding: 10px 15px;
+            border-radius: var(--radius);
+            border: 1px solid #ddd;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+        }
+        
+        .cta-button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: var(--radius);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .cta-button:hover {
+            background: #e5177e;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .legal-hero h2 {
+                font-size: 2rem;
+            }
+            
+            .legal-content {
+                padding: 25px;
+            }
+            
+            .legal-tabs {
+                flex-wrap: wrap;
+            }
+            
+            .legal-tab {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                right: 20px;
+                top: 70px;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                border-radius: var(--radius);
+                box-shadow: var(--shadow);
+                width: 200px;
+            }
+            
+            nav ul.show {
+                display: flex;
+            }
+            
+            nav a {
+                color: var(--dark);
+                padding: 8px 0;
+                display: block;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fa-regular fa-face-smile"></i>
+                <h1>EmojiPicker</h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#tool">Emoji Tool</a></li>
+                    <li><a href="index.html#benefits">Benefits</a></li>
+                    <li><a href="index.html#how-to">How To Use</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Legal Hero -->
+    <section class="legal-hero">
+        <div class="container">
+            <h2 id="page-title">Terms of Service</h2>
+            <p id="page-subtitle">Last updated: June 15, 2023</p>
+        </div>
+    </section>
+
+    <!-- Legal Content -->
+    <div class="container">
+        <div class="legal-content">
+            <div class="legal-tabs">
+                <div class="legal-tab active" onclick="showTab('terms')">Terms of Service</div>
+                <div class="legal-tab" onclick="showTab('privacy')">Privacy Policy</div>
+            </div>
+            
+            <div id="terms-content">
+                <h3>1. Acceptance of Terms</h3>
+                <p>By accessing or using the EmojiPicker website ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of the terms, you may not access the Service.</p>
+                
+                <h3>2. Description of Service</h3>
+                <p>EmojiPicker provides a free online tool that allows users to browse, search, and copy emojis for personal and commercial use. The Service is provided "as is" without warranties of any kind.</p>
+                
+                <h3>3. User Responsibilities</h3>
+                <p>You agree to use the Service only for lawful purposes and in a way that does not infringe the rights of, restrict or inhibit anyone else's use and enjoyment of the Service.</p>
+                
+                <h3>4. Intellectual Property</h3>
+                <p>The emojis displayed on our website are the property of their respective owners. EmojiPicker claims no ownership over the emoji characters themselves. Our website design, logo, and original content are our intellectual property.</p>
+                
+                <h3>5. Limitations of Liability</h3>
+                <p>EmojiPicker shall not be liable for any indirect, incidental, special, consequential or punitive damages resulting from your access to or use of, or inability to access or use the Service.</p>
+                
+                <h3>6. Changes to Terms</h3>
+                <p>We reserve the right to modify these terms at any time. We will notify users of any changes by updating the "Last updated" date at the top of this page.</p>
+                
+                <h3>7. Governing Law</h3>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions.</p>
+            </div>
+            
+            <div id="privacy-content" style="display: none;">
+                <h3>1. Information We Collect</h3>
+                <p>EmojiPicker is committed to protecting your privacy. Our Service does not require registration and we do not collect personal information unless voluntarily provided through our contact form.</p>
+                <p>We may collect non-personal information automatically, including:</p>
+                <ul>
+                    <li>Browser type and version</li>
+                    <li>Operating system</li>
+                    <li>Pages visited on our site</li>
+                    <li>Time and date of visit</li>
+                </ul>
+                
+                <h3>2. How We Use Information</h3>
+                <p>The non-personal information we collect is used solely for:</p>
+                <ul>
+                    <li>Improving our Service</li>
+                    <li>Analyzing usage trends</li>
+                    <li>Troubleshooting technical issues</li>
+                </ul>
+                
+                <h3>3. Cookies and Tracking</h3>
+                <p>We may use cookies and similar tracking technologies to track activity on our Service. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
+                
+                <h3>4. Third-Party Services</h3>
+                <p>We may employ third-party companies to facilitate our Service ("Service Providers"), to perform Service-related services, or to assist us in analyzing how our Service is used. These third parties have access only to the information needed to perform their functions.</p>
+                
+                <h3>5. Data Security</h3>
+                <p>We implement reasonable security measures to protect against unauthorized access, alteration, disclosure or destruction of your information. However, no Internet transmission is ever completely secure or error-free.</p>
+                
+                <h3>6. Children's Privacy</h3>
+                <p>Our Service does not address anyone under the age of 13 ("Children"). We do not knowingly collect personally identifiable information from children.</p>
+                
+                <h3>7. Changes to This Policy</h3>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+                
+                <h3>8. Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us through our contact form on the website.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>EmojiPicker</h4>
+                    <p>The best free online tool for finding and copying emojis instantly to enhance your digital communication.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://emojismaster.blogspot.com/">Home</a></li>
+                        <li><a href="https://emojismaster.blogspot.com/#tool">Emoji Tool</a></li>
+                        <li><a href="https://emojismaster.blogspot.com/#features">Benefits</a></li>
+                        <li><a href="https://emojismaster.blogspot.com/#benefits">How To Use</a></li>
+                        <li><a href="https://emojismaster.blogspot.com/#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Emoji Guide</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="legal.html">Privacy Policy</a></li>
+                        <li><a href="legal.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new emojis and features</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="form-control" style="margin-bottom: 10px;">
+                        <button type="button" class="cta-button" style="width: 100%">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 EmojiPicker. All rights reserved. This site is not affiliated with any platform.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching functionality
+        function showTab(tabName) {
+            // Hide all content sections
+            document.getElementById('terms-content').style.display = 'none';
+            document.getElementById('privacy-content').style.display = 'none';
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.legal-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected content and update active tab
+            if (tabName === 'terms') {
+                document.getElementById('terms-content').style.display = 'block';
+                document.querySelectorAll('.legal-tab')[0].classList.add('active');
+                document.getElementById('page-title').textContent = 'Terms of Service';
+                document.getElementById('page-subtitle').textContent = 'Last updated: June 15, 2023';
+            } else {
+                document.getElementById('privacy-content').style.display = 'block';
+                document.querySelectorAll('.legal-tab')[1].classList.add('active');
+                document.getElementById('page-title').textContent = 'Privacy Policy';
+                document.getElementById('page-subtitle').textContent = 'Last updated: June 15, 2023';
+            }
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set default tab to Terms of Service
+            showTab('terms');
+            
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const navMenu = document.getElementById('nav-menu');
+            
+            mobileMenuBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navMenu.classList.toggle('show');
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function() {
+                navMenu.classList.remove('show');
+            });
+            
+            // Prevent menu from closing when clicking inside it
+            navMenu.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+            
+            // Close menu when clicking a link
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        navMenu.classList.remove('show');
+                    }
+                });
+            });
+            
+            // Newsletter form submission
+            document.querySelector('.newsletter-form button').addEventListener('click', function(e) {
+                e.preventDefault();
+                const email = document.querySelector('.newsletter-form input').value;
+                if (email) {
+                    alert('Thank you for subscribing with: ' + email);
+                    document.querySelector('.newsletter-form').reset();
+                } else {
+                    alert('Please enter your email address');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
