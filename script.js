@@ -1403,54 +1403,155 @@ const EmojiMaster = {
         ],
         combinations: 
 [
-    { "combo": "👨‍💻💻🚀", "name": "Developer Working", "desc": "Man programmer working on computer with rocket speed" },
-    { "combo": "👩‍🍳🍳🍲", "name": "Woman Cooking", "desc": "Woman chef cooking a meal in the kitchen" },
-    { "combo": "👨‍🚀🚀🌕", "name": "Astronaut to Moon", "desc": "Astronaut traveling in rocket to the moon" },
-    { "combo": "👩‍🎨🎨🖌️", "name": "Creative Artist", "desc": "Woman artist painting with colors and brush" },
-    { "combo": "👨‍🏫📚🧠", "name": "Knowledge Mentor", "desc": "Male teacher sharing knowledge with books" },
-    { "combo": "👩‍⚕️🩺💊", "name": "Doctor on Duty", "desc": "Female doctor diagnosing with stethoscope and medicine" },
-    { "combo": "👨‍🎓🎓📖", "name": "Graduation Day", "desc": "Student graduating and reading book" },
-    { "combo": "🧑‍🔧🔧🛠️", "name": "Mechanic at Work", "desc": "Engineer or mechanic fixing with wrench and tools" },
-    { "combo": "👨‍🎤🎤🎶", "name": "Stage Performer", "desc": "Singer performing on stage with microphone and music" },
-    { "combo": "👩‍🏫📘📈", "name": "Data Educator", "desc": "Teacher presenting stats and growth from a book" },
-    { "combo": "👨‍⚖️⚖️📜", "name": "Law and Justice", "desc": "Judge delivering legal decisions with balance and scroll" },
-    { "combo": "👨‍🔬🧪🔬", "name": "Science Researcher", "desc": "Scientist experimenting with test tubes and microscope" },
-    { "combo": "👩‍✈️✈️🌍", "name": "Pilot on Duty", "desc": "Female pilot flying the plane across the globe" },
-    { "combo": "🧑‍💼💼📞", "name": "Office Professional", "desc": "Person handling work, briefcase and business calls" },
-    { "combo": "🧘‍♂️🕉️🧘‍♀️", "name": "Meditation Time", "desc": "Man and woman practicing yoga and inner peace" },
-    { "combo": "👨‍🔧🚗🔩", "name": "Car Mechanic", "desc": "Man repairing a vehicle with parts and tools" },
-    { "combo": "👩‍🎓📚🎓", "name": "Academic Success", "desc": "Woman graduating with books and diploma" },
-    { "combo": "🧑‍🍳🥘🍽️", "name": "Home Chef", "desc": "Cook preparing and serving a delicious meal" },
-    { "combo": "👨‍💼📈💰", "name": "Business Analyst", "desc": "Man presenting data for financial growth" },
-    { "combo": "🧑‍🎤🎧🎼", "name": "Music Producer", "desc": "Artist mixing sounds in a studio" },
-    { "combo": "👩‍⚖️📚⚖️", "name": "Female Judge", "desc": "Woman serving law and reading legal material" },
-    { "combo": "🧑‍🏭⚙️🏗️", "name": "Factory Worker", "desc": "Worker operating machines in a plant" },
-    { "combo": "👨‍🌾🌽🚜", "name": "Modern Farmer", "desc": "Man harvesting crops with a tractor" },
-    { "combo": "👩‍💻📊🖱️", "name": "Remote Worker", "desc": "Woman working from computer on data and analysis" },
-    { "combo": "🧑‍✈️🛫🗺️", "name": "Explorer Pilot", "desc": "Pilot flying across new lands with maps" },
-    { "combo": "👨‍🚒🚒🔥", "name": "Firefighter Duty", "desc": "Man controlling fires and rescuing lives" },
-    { "combo": "👩‍🚀🛰️🪐", "name": "Space Explorer", "desc": "Woman exploring planets using satellite" },
-    { "combo": "👨‍🎨🖼️🎨", "name": "Gallery Artist", "desc": "Man showcasing his artwork" },
-    { "combo": "🧑‍🎓📝📖", "name": "Student Life", "desc": "Person writing and studying hard" },
-    { "combo": "👩‍🔧🔨🪛", "name": "Fix It Lady", "desc": "Woman repairing with tools" },
-    { "combo": "👨‍⚕️💉🩺", "name": "Health Check", "desc": "Male doctor giving an injection" },
-    { "combo": "🧑‍💻💾🖥️", "name": "IT Technician", "desc": "Person fixing or managing systems" },
-    { "combo": "👩‍🔬🧬🧫", "name": "Lab Specialist", "desc": "Scientist testing genes and samples" },
-    { "combo": "🧑‍🚒⛑️🚨", "name": "Emergency Hero", "desc": "Rescue person saving lives in crisis" },
-    { "combo": "👨‍✈️🛬🧳", "name": "Travel Pilot", "desc": "Male pilot flying passengers and luggage" },
-    { "combo": "👩‍🎤🎹🎺", "name": "Stage Diva", "desc": "Female singer performing with music instruments" },
-    { "combo": "🧑‍🏫🧠📝", "name": "Smart Educator", "desc": "Teacher enlightening with mind and notes" },
-    { "combo": "👨‍🌾🌾🌦️", "name": "Rainy Farming", "desc": "Farmer growing crops in weather" },
-    { "combo": "👩‍🏭🔧🚧", "name": "Construction Worker", "desc": "Woman building with tools and barriers" },
-    { "combo": "🧑‍⚕️🩹🏥", "name": "Hospital Care", "desc": "Medical worker treating patients" },
-    { "combo": "👨‍💻⌨️🖱️", "name": "Tech Support", "desc": "Programmer fixing digital systems" },
-    { "combo": "👩‍🎓🎒📝", "name": "Student Ready", "desc": "Female student heading to class" },
-    { "combo": "🧑‍🔬🔍📡", "name": "Science Investigator", "desc": "Scientist analyzing signals and data" },
-    { "combo": "👨‍✈️📦✈️", "name": "Cargo Pilot", "desc": "Transporting packages by air" },
-    { "combo": "👩‍🔧🧰📟", "name": "Technician Woman", "desc": "Lady fixing tech issues" },
-    { "combo": "🧑‍🎤🎷🎧", "name": "Jazz Artist", "desc": "Performer playing music and beats" },
-    { "combo": "👨‍🏫🗒️📚", "name": "Classroom Coach", "desc": "Male teacher mentoring students" },
-    { "combo": "👩‍🌾🌱🌻", "name": "Nature Farmer", "desc": "Woman growing plants and flowers" },
+   
+     { unicode: "👨‍💻💻🚀", name: "Developer Working", desc: "" },
+    { unicode: "👩‍🍳🍳🍲", name: "Woman Cooking", desc: "" },
+    { unicode: "👨‍🚀🚀🌕", name: "Astronaut to Moon", desc: "" },
+    { unicode: "👩‍🎨🎨🖌️", name: "Creative Artist", desc: "" },
+    { unicode: "👨‍🏫📚🧠", name: "Knowledge Mentor", desc: "" },
+    { unicode: "👩‍⚕️🩺💊", name: "Doctor on Duty", desc: "" },
+    { unicode: "👨‍🎓🎓📖", name: "Graduation Day", desc: "" },
+    { unicode: "🧑‍🔧🔧🛠️", name: "Mechanic at Work", desc: "" },
+    { unicode: "👨‍🎤🎤🎶", name: "Stage Performer", desc: "" },
+    { unicode: "👩‍🏫📘📈", name: "Data Educator" , desc: ""},
+    { unicode: "👨‍⚖️⚖️📜", name: "Law and Justice" , desc: ""},
+    { unicode: "👨‍🔬🧪🔬", name: "Science Researcher" , desc: ""},
+    { unicode: "👩‍✈️✈️🌍", name: "Pilot on Duty" , desc: ""},
+    { unicode: "🧑‍💼💼📞", name: "Office Professional", desc: "" },
+    { unicode: "🧘‍♂️🕉️🧘‍♀️", name: "Meditation Time" , desc: ""},
+    { unicode: "👨‍🔧🚗🔩", name: "Car Mechanic" , desc: ""},
+    { unicode: "👩‍🎓📚🎓", name: "Academic Success" , desc: ""},
+    { unicode: "🧑‍🍳🥘🍽️", name: "Home Chef" , desc: ""},
+    { unicode: "👨‍💼📈💰", name: "Business Analyst" , desc: ""},
+    { unicode: "🧑‍🎤🎧🎼", name: "Music Producer", desc: "" },
+    { unicode: "👩‍⚖️📚⚖️", name: "Female Judge" , desc: ""},
+    { unicode: "🧑‍🏭⚙️🏗️", name: "Factory Worker" , desc: ""},
+    { unicode: "👨‍🌾🌽🚜", name: "Modern Farmer" , desc: ""},
+    { unicode: "👩‍💻📊🖱️", name: "Remote Worker" , desc: ""},
+    { unicode: "🧑‍✈️🛫🗺️", name: "Explorer Pilot", desc: "" },
+    { unicode: "👨‍🚒🚒🔥", name: "Firefighter Duty", desc: "" },
+    { unicode: "👩‍🚀🛰️🪐", name: "Space Explorer", desc: "" },
+    { unicode: "👨‍🎨🖼️🎨", name: "Gallery Artist", desc: "" },
+    { unicode: "🧑‍🎓📝📖", name: "Student Life" , desc: ""},
+    { unicode: "👩‍🔧🔨🪛", name: "Fix It Lady", desc: ""},
+    { unicode: "👨‍⚕️💉🩺", name: "Health Check", desc: "" },
+    { unicode: "🧑‍💻💾🖥️", name: "IT Technician", desc: "" },
+    { unicode: "👩‍🔬🧬🧫", name: "Lab Specialist", desc: "" },
+    { unicode: "🧑‍🚒⛑️🚨", name: "Emergency Hero", desc: "" },
+    { unicode: "👨‍✈️🛬🧳", name: "Travel Pilot", desc: ""},
+    { unicode: "👩‍🎤🎹🎺", name: "Stage Diva", desc: "" },
+    { unicode: "🧑‍🏫🧠📝", name: "Smart Educator", desc: "" },
+    { unicode: "👨‍🌾🌾🌦️", name: "Rainy Farming", desc: "" },
+    { unicode: "👩‍🏭🔧🚧", name: "Construction Worker", desc: "" },
+    { unicode: "🧑‍⚕️🩹🏥", name: "Hospital Care", desc: "" },
+    { unicode: "👨‍💻⌨️🖱️", name: "Tech Support" , desc: ""},
+    { unicode: "👩‍🎓🎒📝", name: "Student Ready" , desc: ""},
+    { unicode: "🧑‍🔬🔍📡", name: "Science Investigator", desc: "" },
+    { unicode: "👨‍✈️📦✈️", name: "Cargo Pilot" },
+    { unicode: "👩‍🔧🧰📟", name: "Technician Woman", desc: "" },
+    { unicode: "🧑‍🎤🎷🎧", name: "Jazz Artist", desc: "" },
+    { unicode: "👨‍🏫🗒️📚", name: "Classroom Coach", desc: "" },
+    { unicode: "👩‍🌾🌱🌻", name: "Nature Farmer", desc: "" },
+    { unicode: "🦸‍♂️🛡️⚡", name: "Superhero Power", desc: "" },
+    { unicode: "🐶🎾🏃‍♂️", name: "Dog Playtime" , desc: ""},
+    { unicode: "🏝️🏄‍♀️🌊", name: "Beach Surfing" , desc: ""},
+    { unicode: "🍔🍟🥤", name: "Fast Food Combo", desc: "" },
+    { unicode: "🎬🎥🍿", name: "Movie Night" , desc: ""},
+    { unicode: "✈️🗽🗼", name: "World Tour", desc: "" },
+    { unicode: "🎄🎁⛄", name: "Christmas Eve", desc: ""},
+    { unicode: "🌸📸🏞️", name: "Spring Photography" , desc: ""},
+    { unicode: "🚴‍♂️🌄🚵‍♀️", name: "Mountain Biking Adventure", desc: "" },
+    { unicode: "🛶🏞️🌊", name: "River Kayaking", desc: "" },
+    { unicode: "🌮🌯🥑", name: "Mexican Feast", desc: "" },
+    { unicode: "🏕️🔥🌌", name: "Camping Night" , desc: ""},
+    { unicode: "🎮🖥️🎧", name: "Gamer Setup", desc: "" },
+    { unicode: "🎨🖌️🖼️", name: "Art Gallery Day", desc: "" },
+    { unicode: "🚗🗺️⛽", name: "Road Trip" , desc: ""},
+    { unicode: "📚☕📖", name: "Cafe Study Time" , desc: ""},
+    { unicode: "🏋️‍♂️💪🥗", name: "Healthy Lifestyle", desc: "" },
+    { unicode: "🐠🤿🏝️", name: "Tropical Diving" , desc: ""},
+    { unicode: "🍩☕📰", name: "Morning Routine", desc: "" },
+    { unicode: "🛍️👗👠", name: "Shopping Spree" , desc: ""},
+    { unicode: "🎧🎶💃", name: "Dance Party", desc: "" },
+    { unicode: "🍷🍇🧀", name: "Wine & Cheese" , desc: ""},
+    { unicode: "🎯🏆👏", name: "Goal Achieved", desc: "" },
+    { unicode: "🛫🌅🏖️", name: "Vacation Flight", desc: "" },
+    { unicode: "🍜🥟🍵", name: "Asian Dinner", desc: "" },
+    { unicode: "🧗‍♂️🪂🏔️", name: "Extreme Adventure" , desc: ""},
+    { unicode: "🎂🎉🎈", name: "Birthday Party" , desc: ""},
+    { unicode: "📸🌇🚶‍♂️", name: "City Photography Walk" , desc: ""},
+    { unicode: "🐕🦴🏞️", name: "Dog Park Fun" , desc: ""},
+    { unicode: "🚤🌊🌞", name: "Speedboat Ride", desc: "" },
+    { unicode: "🍓🍫🍰", name: "Dessert Time" , desc: ""},
+    { unicode: "🏀⛹️‍♂️🥇", name: "Basketball Champion" , desc: ""},
+    { unicode: "🚜🌾🌻", name: "Harvest Season", desc: "" },
+    { unicode: "📖🕯️☕", name: "Cozy Reading Night", desc: "" },
+    { unicode: "🎤🎹🎻", name: "Live Music Show", desc: "" },
+    { unicode: "🏊‍♂️🌊☀️", name: "Swimming Day" , desc: ""},
+    { unicode: "🚀🪐🌌", name: "Space Journey", desc: "" },
+    { unicode: "🥗🥤🍏", name: "Healthy Lunch", desc: "" },
+    { unicode: "🦋🌙✨", name: "Moonlit Dreams", desc: "" },
+    { unicode: "🛸👽🌌", name: "Alien Encounter" , desc: ""},
+    { unicode: "👍🎯🏆", name: "Goal Success", desc: "" },
+{ unicode: "👎📉💔", name: "Failure Blues", desc: "" },
+{ unicode: "👍💡🚀", name: "Bright Idea Launch", desc: "" },
+{ unicode: "👍🤝😊", name: "Friendly Agreement", desc: "" },
+{ unicode: "👍📚🎓", name: "Study Success" , desc: ""},
+{ unicode: "👎🛑🚫", name: "Total Rejection", desc: "" },
+{ unicode: "👍🏋️‍♂️💪", name: "Fitness Win", desc: "" },
+{ unicode: "👎💤😴", name: "Lazy Day" , desc: ""},
+{ unicode: "👍🍕🍔", name: "Junk Food Love", desc: "" },
+{ unicode: "👎🥦🥗", name: "Veggie Hate" , desc: ""},
+{ unicode: "👍🛫🌴", name: "Vacation Approved" , desc: ""},
+{ unicode: "👎🌧️☔", name: "Rainy Mood" , desc: ""},
+{ unicode: "👍🎉🥳", name: "Party Time", desc: "" },
+{ unicode: "👍💻🖱️", name: "Tech Success", desc: "" },
+{ unicode: "👎📵📴", name: "Offline Mode" , desc: ""},
+{ unicode: "👍🏆🎖️", name: "Victory Achieved" , desc: ""},
+{ unicode: "👎📄🗑️", name: "Rejected Paper" , desc: ""},
+{ unicode: "👍🚗💨", name: "Smooth Ride", desc: "" },
+{ unicode: "👎🚗💥", name: "Car Trouble", desc: "" },
+{ unicode: "👍🍦🍫", name: "Sweet Treat", desc: "" },
+{ unicode: "👎🌶️🥵", name: "Too Spicy" , desc: ""},
+{ unicode: "👍📦📬", name: "Package Delivered", desc: "" },
+{ unicode: "👎📦⏳", name: "Delivery Delayed", desc: "" },
+{ unicode: "👍🏖️🌊", name: "Beach Day" , desc: ""},
+{ unicode: "👎🏚️💔", name: "Broken Home" , desc: ""},
+{ unicode: "👍💰💳", name: "Financial Win" , desc: ""},
+{ unicode: "👎💸📉", name: "Financial Loss" , desc: ""},
+{ unicode: "👍🎨🖌️", name: "Art Approved", desc: "" },
+{ unicode: "👎🎨🚫", name: "Art Criticism", desc: "" },
+{ unicode: "👍🎮🏆", name: "Gaming Win", desc: "" },
+{ unicode: "👎🎮💢", name: "Rage Quit" , desc: ""},
+{ unicode: "👍📰🖋️", name: "Good News" , desc: ""},
+{ unicode: "👎📰⚠️", name: "Bad News", desc: "" },
+{ unicode: "👍🍷🍽️", name: "Fine Dining", desc: "" },
+{ unicode: "👎🥫🍞", name: "Boring Meal" , desc: ""},
+{ unicode: "💋❤️😍", name: "Passionate Love", desc: "" },
+{ unicode: "😘🌹💌", name: "Romantic Surprise" },
+{ unicode: "💏🌅💖", name: "Sunset Kiss", desc: "" },
+{ unicode: "😘💍💑", name: "Proposal Kiss" , desc: ""},
+{ unicode: "💋🍷🕯️", name: "Romantic Dinner" , desc: ""},
+{ unicode: "😘✈️💌", name: "Love From Afar" , desc: ""},
+{ unicode: "💋🎉🥂", name: "Celebration Kiss" , desc: ""},
+{ unicode: "😘🌸💞", name: "Spring Romance" , desc: ""},
+{ unicode: "💋🌧️☔", name: "Rainy Day Kiss" , desc: ""},
+{ unicode: "😘🎶💃", name: "Dance Floor Romance" , desc: ""},
+{ unicode: "💋🌍✈️", name: "Travel Love", desc: "" },
+{ unicode: "😘📸🏞️", name: "Kiss in Nature", desc: "" },
+{ unicode: "💏🏖️🌊", name: "Beach Kiss" , desc: ""},
+{ unicode: "💋🏆🎯", name: "Kiss of Victory" , desc: ""},
+{ unicode: "😘🛏️💤", name: "Goodnight Kiss" , desc: ""},
+{ unicode: "💋📜💖", name: "Love Letter Kiss" , desc: ""},
+{ unicode: "😘💎👑", name: "Royal Romance" , desc: ""},
+{ unicode: "💋🎭🌹", name: "Theatrical Kiss", desc: "" },
+{ unicode: "😘🏟️🎶", name: "Concert Kiss", desc: "" },
+{ unicode: "💋🍫🍓", name: "Sweet Kiss" , desc: ""},
+
+
+
+
+
             // Add more combinations here
         ],
         trending: [
@@ -1784,7 +1885,7 @@ const EmojiMaster = {
     isFavorite: function(emoji) {
         return this.state.favorites.some(f => {
             if (f.unicode && emoji.unicode) return f.unicode === emoji.unicode;
-            if (f.combo && emoji.combo) return f.combo === emoji.combo;
+            if (f.unicode && emoji.unicode) return f.unicode === emoji.unicode;
             return false;
         });
     },
@@ -1800,11 +1901,11 @@ const EmojiMaster = {
         let html = '<div class="emoji-grid">';
         this.state.favorites.forEach(emoji => {
             const isFavorite = true; // They're all favorites in this view
-            if (emoji.combo) {
+            if (emoji.unicode) {
                 // Combination item
                 html += `
                     <div class="emoji-item combination-item" data-emoji='${JSON.stringify(emoji).replace(/'/g, "\\'")}'>
-                        <span class="emoji-char">${emoji.combo}</span>
+                        <span class="emoji-char">${emoji.unicode}</span>
                         <span class="emoji-name">${emoji.name}</span>
                         ${emoji.desc ? `<span class="emoji-desc">${emoji.desc}</span>` : ''}
                         <button class="emoji-favorite active">♥</button>
@@ -1839,11 +1940,11 @@ const EmojiMaster = {
         let html = '<div class="emoji-grid">';
         this.state.recentlyUsed.forEach(emoji => {
             const isFavorite = this.isFavorite(emoji);
-            if (emoji.combo) {
+            if (emoji.unicode) {
                 // Combination item
                 html += `
                     <div class="emoji-item combination-item" data-emoji='${JSON.stringify(emoji).replace(/'/g, "\\'")}'>
-                        <span class="emoji-char">${emoji.combo}</span>
+                        <span class="emoji-char">${emoji.unicode}</span>
                         <span class="emoji-name">${emoji.name}</span>
                         <span class="emoji-desc">${emoji.desc}</span>
                         <button class="emoji-favorite ${isFavorite ? 'active' : ''}">♥</button>
@@ -1898,7 +1999,7 @@ const EmojiMaster = {
             const isFavorite = this.isFavorite(item);
             html += `
                 <div class="emoji-item combination-item" data-emoji='${JSON.stringify(item).replace(/'/g, "\\'")}'>
-                    <span class="emoji-char">${item.combo}</span>
+                    <span class="emoji-char">${item.unicode}</span>
                     <span class="emoji-name">${item.name}</span>
                     <span class="emoji-desc">${item.desc}</span>
                     <button class="emoji-favorite ${isFavorite ? 'active' : ''}">♥</button>
@@ -1917,7 +2018,7 @@ const EmojiMaster = {
         // Remove if already exists
         this.state.recentlyUsed = this.state.recentlyUsed.filter(e => {
             if (e.unicode && emojiData.unicode) return e.unicode !== emojiData.unicode;
-            if (e.combo && emojiData.combo) return e.combo !== emojiData.combo;
+            if (e.unicode && emojiData.unicode) return e.unicode !== emojiData.unicode;
             return true;
         });
         
@@ -1933,7 +2034,7 @@ const EmojiMaster = {
     toggleFavorite: function(emoji) {
         const index = this.state.favorites.findIndex(e => {
             if (e.unicode && emoji.unicode) return e.unicode === emoji.unicode;
-            if (e.combo && emoji.combo) return e.combo === emoji.combo;
+            if (e.unicode && emoji.unicode) return e.unicode === emoji.unicode;
             return false;
         });
         
@@ -1994,11 +2095,11 @@ const EmojiMaster = {
         filteredItems.forEach(item => {
             const isFavorite = this.isFavorite(item);
             
-            if (item.combo) {
+            if (item.unicode) {
                 // Combination item
                 html += `
                     <div class="emoji-item combination-item" data-emoji='${JSON.stringify(item).replace(/'/g, "\\'")}'>
-                        <span class="emoji-char">${item.combo}</span>
+                        <span class="emoji-char">${item.unicode}</span>
                         <span class="emoji-name">${item.name}</span>
                         <span class="emoji-desc">${item.desc}</span>
                         <button class="emoji-favorite ${isFavorite ? 'active' : ''}">♥</button>
