@@ -1120,7 +1120,7 @@
     .skin-tone-options {
         width: 100%;
         justify-content: space-between;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     
     .skin-tone {
@@ -1146,5 +1146,6 @@
         margin-left: -15px;
     }
 }
+
 
 
