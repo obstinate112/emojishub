@@ -1134,19 +1134,4 @@
     }
 }
 
-@media (max-width: 768px) {
-    .tool-container {
-        padding: 20px 15px;
-    }
-    
-    .tool-tabs {
-        padding: 8px 10px 0;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    
-    .tab-btn {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-}
+
