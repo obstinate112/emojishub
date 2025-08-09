@@ -1079,10 +1079,15 @@
 }
 
 
-
 @media (max-width: 768px) {
+
+
+
+
+    /* Fix search bar */
     .tool-controls {
         flex-direction: column;
+        gap: 15px;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -1091,61 +1096,45 @@
     .search-container {
         width: 100%;
         margin: 0;
-        padding: 0;
+        min-width: auto;
     }
     
     #emoji-search {
-        width: calc(100% - 20px); /* Account for padding */
-        min-width: 0; /* Override any min-width */
-        margin: 0;
-        padding: 12px 10px;
+        width: 100%;
+        padding: 12px 15px;
+        box-sizing: border-box;
     }
     
-    .search-btn {
-        padding: 0 15px;
-    }
-}
-
-
-
-
-
-@media (max-width: 768px) {
+    /* Fix skin tone selector */
     .skin-tone-selector {
         width: 100%;
+        justify-content: space-between;
         padding: 10px 0;
-        flex-wrap: wrap;
     }
     
     .skin-tone-options {
         width: 100%;
         justify-content: space-between;
-        flex-wrap: wrap;
     }
     
     .skin-tone {
-        flex: 1; /* Equal width distribution */
-        max-width: 32px;
-        margin: 0 2px;
+        width: 32px;
+        height: 32px;
     }
-}
-
-
-
-
-@media (max-width: 768px) {
+    
+    /* Fix tool container */
     .tool-container {
         width: 100vw;
-        padding: 15px;
-        margin-left: -15px; /* Counteract container padding */
+        margin-left: -20px;
+        padding: 20px;
         box-sizing: border-box;
     }
     
+    /* Fix emoji picker */
     .emoji-picker {
         width: 100vw;
-        margin-left: -15px;
+        margin-left: -20px;
+        --num-columns: 6;
     }
+
 }
-
-
-
