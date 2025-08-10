@@ -20,7 +20,7 @@
             font-family: 'Poppins', sans-serif;
         }
         
-        html, body {
+        body {
             background-color: #f0f2f5;
             color: var(--dark);
             line-height: 1.6;
@@ -1138,4 +1138,5 @@
     }
 
 }
+
 
